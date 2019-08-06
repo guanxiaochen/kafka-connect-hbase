@@ -22,20 +22,20 @@
 		<developer>
 			<name>Nishu Tayal</name>
 			<email>nishutayal@gmail.com</email>
-			<url>https://github.com/nishutayal</url>
+			<url>https://github.com/tayalnishu</url>
 			<roles>
 				<role>maintainer</role>
 			</roles>
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git://github.com/nishutayal/kafka-connect-hbase.git</connection>
-		<developerConnection>scm:git:git@github.com:nishutayal/kafka-connect-hbase.git</developerConnection>
-		<url>https://github.com/nishutayal/kafka-connect-hbase</url>
+		<connection>scm:git:git://github.com/tayalnishu/kafka-connect-hbase.git</connection>
+		<developerConnection>scm:git:git@github.com:tayalnishu/kafka-connect-hbase.git</developerConnection>
+		<url>https://github.com/tayalnishu/kafka-connect-hbase</url>
 	</scm>
 	<issueManagement>
 		<system>github</system>
-		<url>https://github.com/nishutayal/kafka-connect-hbase/issues</url>
+		<url>https://github.com/tayalnishu/kafka-connect-hbase/issues</url>
 	</issueManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -222,7 +222,7 @@
 						</goals>
 						<configuration>
 							<title>Kafka Connect HBase Sink</title>
-							<documentationUrl>https://github.com/nishutayal/kafka-connect-hbase/blob/master/README.md</documentationUrl>
+							<documentationUrl>https://github.com/tayalnishu/kafka-connect-hbase/blob/master/README.md</documentationUrl>
 							<description>It's a basic Apache Kafka Connect SinkConnector
 								which allows moving data from Kafka topics into HBase tables.</description>
 							<ownerUsername>nishutayal</ownerUsername>
