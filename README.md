@@ -115,24 +115,24 @@ Same can be run with Apache Kafka scripts.
 
 * For JSON data, use JSONConverter in connect-standalone.properties file. If key and value contain schema and payload, set schema.enable to `true`, else `false`. 
 
-Example data [with schema] : 
+<b>Example data [with schema]:</b>
   
 `
 {"schema":{"type":"struct","fields":[{"type":"string","optional":false,"field":"firstName"},{"type":"string","optional":false,"field":"lastName"},{"type":"string","optional":false,"field":"email"},{"type":"int32","optional":false,"field":"age"},{"type":"int32","optional":false,"field":"weightInKgs"}],"optional":false,"name":"Person"},"payload":{"firstName":"Jan","lastName":"Peter","email":"eric.cartman@southpark.com","age":10,"weightInKgs":40}}
 `
 
-  [without schema]:
+  <b>[without schema]:</b>
  
  `{"firstName":"Jan","lastName":"Peter","email":"eric.cartman@southpark.com","age":10,"weightInKgs":40}`
  
 
-###Changes
+### Changes
 
-#####v1.0.1
+##### v1.0.1
  - Earlier limitation "kafka topic and table name should be same" has been removed. Table name can be set using `hbase.table.name` property  
  - Upgraded to Kafka 2.0.0 and Confluent 5.0.0
  
-#####v1.0.0
+##### v1.0.0
  - Initial version 
  - Support with Kafka 1.0.0 and Confluent 4.0.0 
  
