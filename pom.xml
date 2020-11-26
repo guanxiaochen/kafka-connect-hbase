@@ -6,7 +6,7 @@
 
 	<groupId>io.svectors.connect</groupId>
 	<artifactId>kafka-connect-hbase</artifactId>
-	<version>1.0.1</version>
+	<version>2.1.0-cdh6.2.0</version>
 	<description>
        A Kafka Connect HBase connector for copying data between databases and Kafka.
     </description>
@@ -39,8 +39,8 @@
 	</issueManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hbase.version>1.4.0</hbase.version>
-		<hadoop.version>2.6.0</hadoop.version>
+		<hbase.version>2.1.0-cdh6.2.0</hbase.version>
+		<hadoop.version>3.0.0-cdh6.2.0</hadoop.version>
 		<kafka.version>2.0.0</kafka.version>
 		<junit.version>4.11</junit.version>
 		<hadoop.mvn.version>2.7.1</hadoop.mvn.version>
@@ -122,40 +122,6 @@
 			<version>${hbase.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.hbase</groupId>
-			<artifactId>hbase-testing-util</artifactId>
-			<version>${hbase.version}</version>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<artifactId>avro</artifactId>
-					<groupId>org.apache.avro</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-avro-serializer</artifactId>
-			<version>${confluent.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>avro</artifactId>
-					<groupId>org.apache.avro</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-connect-avro-converter</artifactId>
-			<version>${confluent.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>avro</artifactId>
-					<groupId>org.apache.avro</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.avro</groupId>
 			<artifactId>avro</artifactId>

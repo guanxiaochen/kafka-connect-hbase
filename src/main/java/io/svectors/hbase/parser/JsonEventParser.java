@@ -167,17 +167,17 @@ public class JsonEventParser implements EventParser {
 		case BYTES:
 			return Bytes.toBytes((ByteBuffer) fieldValue);
 		case FLOAT32:
-			return Bytes.toBytes((Float) fieldValue);
+			return Bytes.toBytes(((Number) fieldValue).floatValue());
 		case FLOAT64:
-			return Bytes.toBytes((Double) fieldValue);
+			return Bytes.toBytes(((Number) fieldValue).doubleValue());
 		case INT8:
 			return Bytes.toBytes((Byte) fieldValue);
 		case INT16:
 			return Bytes.toBytes((Short) fieldValue);
 		case INT32:
-			return Bytes.toBytes((Integer) fieldValue);
+			return Bytes.toBytes(((Number) fieldValue).intValue());
 		case INT64:
-			return Bytes.toBytes((Long) fieldValue);
+			return Bytes.toBytes(((Number) fieldValue).longValue());
 		// case MAP:
 		// return Bytes.toBytes(new JSONObject((Map)fieldValue).toString());
 		default:

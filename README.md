@@ -19,7 +19,7 @@ Sink supports:
 ## Assumptions
 * The HBase table already exists.
 * Column Families are already created in HBase table
-* Each Kafka topic is mapped to a HBase table. (In version 1.0.1. implementation is changed- It requires `hbase.table.name` property to be set.)
+* Each Kafka topic is mapped to a HBase table. (In version 2.1.0-cdh6.2.0. implementation is changed- It requires `hbase.table.name` property to be set.)
 
 
 ## Properties
@@ -128,9 +128,13 @@ Same can be run with Apache Kafka scripts.
 
 ### Changes
 
+##### v2.1.0-cdh6.2.0
+ - Earlier limitation "kafka topic and table name should be same" has been removed. Table name can be set using `hbase.table.name` property  
+ - Upgraded to Kafka 2.0.0 and Confluent 5.0.0 and hbase 2.1.0-cdh6.2.0
+
 ##### v1.0.1
  - Earlier limitation "kafka topic and table name should be same" has been removed. Table name can be set using `hbase.table.name` property  
- - Upgraded to Kafka 2.0.0 and Confluent 5.0.0
+ - Upgraded to Kafka 2.0.0 and Confluent 5.0.0 and hbase 1.4.0
  
 ##### v1.0.0
  - Initial version 
